@@ -1,0 +1,6 @@
+<h3>{{category.name}}</h3>
+<ul>
+    {% for article in articles %}
+        <li><a href = "{{article.get_absolute_url}}">{{article.title}}</a>
+    {% endfor %}
+</ul>

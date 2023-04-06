@@ -1,0 +1,4 @@
+{% for article in articles %}
+    <a href="{{article.get_absolute_url}}"><h3>{{article.title}}</h3></a>
+    <p>{{article.body | safe}}</p> | <a href="{{article.category.get_absolute_url}}">{{article.category.name}}</a>
+{% endfor %}
